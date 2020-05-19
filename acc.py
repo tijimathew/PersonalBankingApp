@@ -37,6 +37,10 @@ class Account:
     
 
 class Checking(Account):
+    """
+    This class generates checking account objects
+    """
+    type = "checking"
 
     def __init__(self, filepath, fee):
         Account.__init__(self, filepath)
